@@ -9,7 +9,7 @@ angular.module('myApp.home', ['ngRoute'])
         });
     }])
 
-    .controller('homeCtrl', [function() {
+    .controller('homeCtrl', [function($scope,$http) {
         $scope.success = false;
         $scope.error = false;
         $scope.send = function () {

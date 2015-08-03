@@ -37,6 +37,31 @@ nav {
   clear:both;
 }
 
+#googleMap {
+  width: 500px;
+  height: 500px;
+  background-color: #CCC;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
 
 body, form, ul, li, p, h2, h3, h4, h5{margin: 0;padding: 0;}
 #signup img { border: none; }
