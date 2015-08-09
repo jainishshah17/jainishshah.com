@@ -7,6 +7,8 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.home',
   'myApp.contact',
+  'myApp.about',
+  'myApp.projects',
   'myApp.demo',
   'myApp.version'
 ]).

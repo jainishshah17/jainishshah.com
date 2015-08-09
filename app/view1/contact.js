@@ -16,8 +16,6 @@ angular.module('myApp.contact', ['ngRoute'])
         var myCenter=new google.maps.LatLng(37.543196, -121.976410);
         //var myCenter=new google.maps.LatLng(51.508742,-0.120850);
 
-        function initialize()
-        {
             var mapProp = {
                 center:myCenter,
                 zoom:5,
@@ -39,9 +37,8 @@ angular.module('myApp.contact', ['ngRoute'])
             google.maps.event.addListener(marker, 'click', function() {
                 infowindow.open(map,marker);
             });
-        }
 
-        google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'load');
 
     }]);
 
