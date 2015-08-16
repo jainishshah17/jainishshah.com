@@ -38,8 +38,8 @@ nav {
 }
 
 #googleMap {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 400px;
   background-color: #CCC;
 }
 

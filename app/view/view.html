@@ -1,0 +1,84 @@
+
+    <script type="text/javascript">
+        H5F.listen(window,"load",function () {
+            H5F.setup(document.getElementById("signup"));
+        },false);
+    </script>
+
+<form id="signup">
+    <h2>Fields marked (*) are required</h2>
+    <fieldset>
+        <ol>
+            <li>
+                <label for="firstname">First Name *</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" required />
+            </li>
+            <li>
+                <label for="lastname">Last Name *</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" required />
+            </li>
+            <li>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="e.g. swapnil@example.com" title="Please enter a valid email" required />
+                <p class="validation01">
+                    <span class="invalid">Please enter a valid email address e.g. swapnil@example.com</span>
+                    <span class="valid">Your email address is now valid</span>
+                </p>
+            </li>
+            <li>
+                <label for="url">Website *</label>
+                <input type="url" name="url" id="url" placeholder="e.g. http://www.html5andcss3.org" title="Please enter a valid URL" required />
+                <p class="validation01">
+                    <span class="invalid">Please enter a valid URL address e.g. http://www.html5andcss3.org</span>
+                    <span class="valid">Your URL address is now valid</span>
+                </p>
+            </li>
+            <li>
+                <label for="tel">Mobile *</label>
+                <input type="tel" id="tel" name="tel" pattern="\d{10}" placeholder="Please enter a ten digit phone number" required />
+                <p class="validation01">
+                    <span class="invalid">No spaces or brackets e.g. 9999999999</span>
+                    <span class="valid">Your mobile number is valid</span>
+                </p>
+            </li>
+            <li>
+                <label for="state">Country</label>
+                <select name="state" id="state">
+                    <option>Africa</option>
+                    <option>America</option>
+                    <option>Australia</option>
+                    <option>China</option>
+                    <option>England</option>
+                    <option>Japan</option>
+                    <option selected>India</option>
+                    <option>Indonesia</option>
+                </select>
+            </li>
+            <li>
+                <label for="postcode">Post code *</label>
+                <input id="postcode" name="postcode" type="number" min="10001" max="999999" maxlength="6" required />
+                <p class="validation01">
+                    <span class="invalid">Your postcode is out of range between 10001 - 999999</span>
+                    <span class="valid">Your postcode is in the correct range</span>
+                </p>
+            </li>
+            <li>
+                <label for="address">Address *</label>
+                <textarea id="address" name="address" type="text" required></textarea>
+            </li>
+            <li>
+                <label for="username">General *</label>
+                <input id="radio" name="radio" type="radio" required />Male <input id="radio" name="radio" type="radio" required />Female
+            </li>
+            <li>
+                <label for="password">Password *</label>
+                <input id="password" name="password" type="password" title="Minimum 8 characters, one number, one uppercase and one lowercase letter" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" required />
+                <p class="validation01">
+                    <span class="invalid">Minimum 8 characters, one number, one uppercase letter and one lowercase letter</span>
+                    <span class="valid">Your password meets our requirements, thank you.</span>
+                </p>
+            </li>
+        </ol>
+    </fieldset>
+    <input type="submit" class="ghost-button" value="Sign up" />
+</form>
