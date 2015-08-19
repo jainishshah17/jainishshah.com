@@ -62,7 +62,22 @@ nav {
   stroke: #ccc;
   stroke-width: 1.5px;
 }
-
+.hidden {
+  display: none;
+}
+.vertical-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.panel.panel-default {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.message {
+  padding: 15px;
+  margin: 0;
+}
 
 body, form, ul, li, p, h2, h3, h4, h5{margin: 0;padding: 0;}
 #signup img { border: none; }
