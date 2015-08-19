@@ -10,7 +10,7 @@ angular.module('myApp.demo', ['ngRoute'])
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/demo', {
-            templateUrl: '/app/view/demo.html',
+            templateUrl: 'view/demo.html',
             controller: 'demoCtrl'
         });
     }])
