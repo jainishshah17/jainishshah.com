@@ -15,11 +15,13 @@
   <link rel="stylesheet" href="assets/stylesheets/footer.css">
   <link rel="stylesheet" href="assets/stylesheets/about.css">
   <link rel="stylesheet" href="assets/stylesheets/button.css">
-  <link rel="shortcut icon" href="public/images/favicon.ico">
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="icon" type="image/gif" href="public/images/animated_favicon1.gif">
+  <link rel="shortcut icon" href="public/images/favicon.ico">
+  <link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="//vjs.zencdn.net/4.12/video.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="http://maps.googleapis.com/maps/api/js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
@@ -28,8 +30,6 @@
 <body background="assets/images/background.jpg">
 <nav>
   <ul class="menu">
-    <li><a href="#/view" class="ghost-button">view</a></li>
-    <li><a href="#/view2" class="ghost-button">view2</a></li>
     <li><a href="#/home" class="ghost-button">Home</a></li>
     <li><a href="#/demo" class="ghost-button">Demo</a></li>
     <li><a href="#/projects" class="ghost-button">Projects</a></li>
@@ -43,7 +43,6 @@
   <![endif]-->
 </section>
   <div ng-view></div>
-
 
 <footer>
   <div>
@@ -66,15 +65,11 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
-  <script src="assets/javascripts/crontollers/view.js"></script>
-  <script src="assets/javascripts/crontollers/view2.js"></script>
   <script src="assets/javascripts/crontollers/home.js"></script>
   <script src="assets/javascripts/crontollers/demo.js"></script>
   <script src="assets/javascripts/crontollers/contact.js"></script>
   <script src="assets/javascripts/crontollers/about.js"></script>
   <script src="assets/javascripts/crontollers/projects.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
 </body>
 </html>
