@@ -28,4 +28,4 @@ ENV PATH $PATH:$CATALINA_HOME/bin
 
 # Start Tomcat
 
-CMD /opt/tomcat/bin/catalina.sh start && tail -f /opt/conf/application.conf
+CMD /opt/tomcat/bin/catalina.sh start && tail -f /opt/tomcat/logs/catalina.out
