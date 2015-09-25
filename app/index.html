@@ -26,11 +26,13 @@
   <script src="http://maps.googleapis.com/maps/api/js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
   <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.min.js"></script>
 </head>
-<body background="assets/images/background.jpg">
+<body>
 <nav>
   <ul class="menu">
     <li><a href="#/home" class="ghost-button">Home</a></li>
+    <li><a href="#/chat" class="ghost-button">Chat</a></li>
     <li><a href="#/demo" class="ghost-button">Demo</a></li>
     <li><a href="#/projects" class="ghost-button">Projects</a></li>
     <li><a href="#/contact" class="ghost-button">Contact</a></li>
@@ -44,7 +46,7 @@
 </section>
   <div ng-view></div>
 
-<footer>
+<footer id="footer">
   <div>
   <ul class="soc">
     <li><a class="soc-facebook" href="https://www.facebook.com/jainish.shah.3979" target="_blank"></a></li>
@@ -65,6 +67,8 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
+  <script src="assets/javascripts/crontollers/chat.js"></script>
+  <!--<script src="assets/javascripts/crontollers/index.js"></script>-->
   <script src="assets/javascripts/crontollers/home.js"></script>
   <script src="assets/javascripts/crontollers/demo.js"></script>
   <script src="assets/javascripts/crontollers/contact.js"></script>

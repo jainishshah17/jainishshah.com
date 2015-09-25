@@ -25,18 +25,18 @@ angular.module('myApp.contact', ['ngRoute'])
             if (contactform.$valid) {
                 $http({
                     method  : 'POST',
-                    url     : 'contact-form.php',
+                    url     : 'http://localhost:8000/contact-form.php',
                     data    : $.param($scope.formData),  //param method from jQuery
                     headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  //set the headers so angular passing info as form data (not request payload)
                 }).success(function(data){
                     console.log(data);
-                    if (data.success) { //success comes from the return json object
+                    if (data) { //success comes from the return json object
                         $scope.submitButtonDisabled = true;
-                        $scope.resultMessage = data.message;
+                        $scope.resultMessage = data;
                         $scope.result='bg-success';
                     } else {
                         $scope.submitButtonDisabled = false;
-                        $scope.resultMessage = data.message;
+                        $scope.resultMessage = data;
                         $scope.result='bg-danger';
                     }
                 });
@@ -46,7 +46,6 @@ angular.module('myApp.contact', ['ngRoute'])
                 $scope.result='bg-danger';
             }
         };
-
 
         var myCenter=new google.maps.LatLng(37.543196, -121.976410);
 
