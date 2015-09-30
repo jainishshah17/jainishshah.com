@@ -20,7 +20,7 @@ RUN rm -rf /opt/tomcat/webapps/*
 
 RUN apt-get update
 
-ADD jainishshah.war /opt/tomcat/webapps/
+ADD ROOT.war /opt/tomcat/webapps/
 
 ENV CATALINA_HOME /opt/tomcat
 
@@ -28,4 +28,4 @@ ENV PATH $PATH:$CATALINA_HOME/bin
 
 # Start Tomcat
 
-CMD /opt/tomcat/bin/catalina.sh start && tail -f /opt/conf/application.conf
+CMD /opt/tomcat/bin/catalina.sh start && tail -f /opt/tomcat/logs/catalina.out

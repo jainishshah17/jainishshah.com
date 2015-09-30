@@ -8,7 +8,6 @@ angular.module('myApp', [
   'myApp.about',
   'myApp.projects',
   'myApp.demo',
-  'myApp.chat'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});

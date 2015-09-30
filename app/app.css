@@ -81,45 +81,51 @@ nav {
 input{
   font: 13px "sans-serif";
 }
-.chat{
-  max-width: 300px;
+
+.paragraph{
+  padding:10px 0px;
 }
 
-.chat-messages,
-.chat-textarea,
-.chat-name{
-  border: 1px solid #bbb;
-}
-.chat-message{
-  margin-bottom: 10px;
-}
-.chat-messages{
-  width: 100%;
-  height: 300px;
-  overflow-y: scroll;
+.image{
   padding: 10px;
-  border-bottom: 0;
 }
-
-.chat-name{
+.container{
   width: 100%;
-  padding: 10px;
-  border-bottom: 0;
-  margin: 0;
-
+  margin: 0 auto;
+  margin-top:50px;
+  margin-bottom: 50px;
 }
-.chat-textarea{
-  width: 100%;
-  padding: 10px;
-
-  margin: 0;
-  max-width: 100%;
-}
-.chat-status{
-  color: #bbb;
-}
-.chat-textarea,
-.chat-messages{
-  outline: none;
+.movie{
+  margin: 20px;
 }
 
+.projects{
+  margin-left: 40px;
+}
+
+#map_container{
+  position: relative;
+
+}
+#map{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 22.25%;
+  padding-top: 30px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+#demo{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#myChart{
+ width: 50%;
+  height: 100%;
+  float: right;
+  align-content: center;
+}
