@@ -46,10 +46,10 @@
     display:block;
     position: relative;
     z-index: 1;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    font-size: 33px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
     -webkit-border-radius: 39px;
     -moz-border-radius: 39px;
     border-radius: 39px;

@@ -8,6 +8,7 @@ angular.module('myApp', [
   'myApp.about',
   'myApp.projects',
   'myApp.demo',
+  'myApp.dockers'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});

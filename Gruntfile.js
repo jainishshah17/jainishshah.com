@@ -13,8 +13,8 @@ module.exports = function(grunt) {
             },
             build_docker: {
                 command: [
-                    'docker build --tag="jainishshah17/jainishshah.com" .',
-                    'docker push jainishshah17/jainishshah.com'
+                    'docker build --tag="jainishshah17/website" .',
+                    'docker push jainishshah17/website'
                 ].join('&&'),
                 options: {
                     execOptions: {
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
                 command: [
                     'echo <%= secret.password %> | sudo -S whoami',
                     'sudo docker pull jainishshah17/jainishshah.com',
-                    'sudo docker run -d -p 80:8080 --name="jainish" jainishshah17/jainishshah.com'
+                    'sudo docker run -d -p 80:8080 --name="jainish" jainishshah17/website'
                 ].join('&&')
             }
         }

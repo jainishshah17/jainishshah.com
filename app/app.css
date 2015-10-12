@@ -82,8 +82,21 @@ input{
   font: 13px "sans-serif";
 }
 
-.paragraph{
-  padding:10px 0px;
+div.background
+{
+  height: 100%;
+}
+div.transbox
+{
+  border: 1px solid white;
+  background-color: #ffffff;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+div.transbox p
+{
+  margin: 5%;
+  font-weight: bold;
 }
 
 .image{
