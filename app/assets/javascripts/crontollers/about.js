@@ -12,6 +12,7 @@ angular.module('myApp.about', ['ngRoute'])
         });
     }])
     .controller('aboutCtrl', [function($scope,$http) {
+
         var margin = {top: 40, right: 20, bottom: 100, left: 40},
             width = 960 - margin.left - margin.right,
             height = 600 - margin.top - margin.bottom;

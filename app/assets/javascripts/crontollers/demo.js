@@ -176,9 +176,11 @@ angular.module('myApp.demo', ['ngRoute'])
             value: 120,
             color: "#4D5360",
             label: "AWS"
-        }
-
-        ]
+        },{
+            value: 120,
+            color: "#4D9362",
+            label: "Cloud"
+        }]
 
         var options = {
             animation: true
@@ -193,17 +195,17 @@ angular.module('myApp.demo', ['ngRoute'])
 
 
         var barData = {
-            labels: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Json', 'AngularJs','Node.js'],
+            labels: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Json', 'AngularJs','Node.js','express.js','Ruby'],
             datasets: [
                 {
                     label: 'learned',
                     fillColor: '#382765',
-                    data: [8, 9, 9, 5, 8, 8]
+                    data: [8, 9, 9, 5, 8, 8, 7, 8, 9]
                 },
                 {
                     label: 'work',
                     fillColor: '#7BC225',
-                    data: [6, 5, 7, 2, 5, 4]
+                    data: [6, 5, 7, 2, 5, 4, 8, 5, 7]
                 }
             ]
         };

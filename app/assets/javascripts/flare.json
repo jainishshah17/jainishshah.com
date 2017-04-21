@@ -72,6 +72,23 @@
         {"name": "Tomcat", "size": 139},
         {"name": "Logstash", "size": 140}
       ]
+    },
+    {
+      "name": "Jfrog",
+      "children": [
+        {"name": "Homebrew", "size": 123},
+        {"name": "Bower", "size": 124},
+        {"name": "GitLFS", "size": 125},
+        {"name": "express.js", "size": 126},
+        {"name": "Ruby", "size": 127},
+        {"name": "node.js", "size": 128},
+        {"name": "Pivotal Cloud Foundry", "size": 129},
+        {"name": "GCP", "size": 130},
+        {"name": "Groovy", "size": 131},
+        {"name": "AWS", "size": 132},
+        {"name": "JSON", "size": 134},
+        {"name": "Atlassian Connect", "size": 135}
+      ]
     }
   ]
 }
