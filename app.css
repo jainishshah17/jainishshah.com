@@ -127,7 +127,7 @@ div.transbox p
   padding-top: 30px;
   position: relative;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 #demo{
